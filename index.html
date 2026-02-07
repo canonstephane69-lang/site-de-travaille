@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Services Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cleaning Services</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#availability">Availability</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="gallery">
+                <img src="service1.jpg" alt="Service 1">
+                <img src="service2.jpg" alt="Service 2">
+                <img src="service3.jpg" alt="Service 3">
+            </div>
+        </section>
+        <section id="availability">
+            <h2>Check Availability</h2>
+            <form id="availability-form">
+                <label for="date">Select a date:</label>
+                <input type="date" id="date" name="date" required>
+                <input type="submit" value="Check Availability">
+            </form>
+        </section>
+        <section id="booking">
+            <h2>Book Now</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="service">Service:</label>
+                <select id="service" name="service">
+                    <option value="cleaning">Cleaning</option>
+                    <option value="deep-cleaning">Deep Cleaning</option>
+                    <option value="office-cleaning">Office Cleaning</option>
+                </select>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <input type="submit" value="Book Now">
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Cleaning Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
